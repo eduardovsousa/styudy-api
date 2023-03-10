@@ -3,8 +3,11 @@ package com.github.eduardovsousa.study_api.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.github.eduardovsousa.study_api.model.Pessoa;
 
+@Service
 public class PessoaService {
 	private List<Pessoa> pessoas;
 	
