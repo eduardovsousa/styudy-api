@@ -1,12 +1,16 @@
 package com.github.eduardovsousa.study_api.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "pessoas")
 public class Pessoa {
 	@Id
 	private Long id;
+	@Column(name = "nome_completo")
 	private String nome;
 	private int idade;
 	public Long getId() {
